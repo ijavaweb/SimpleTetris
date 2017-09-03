@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>俄罗斯方块</title>
@@ -7,6 +7,7 @@
 </head>
 <body>
 <div>使用方向键和空格键操作</div>
+<div id="waiting"></div>
 <div class="square" id="local">
     <div class="title">我的游戏区域</div>
     <div id="local_game" class="game"></div>
@@ -25,24 +26,9 @@
         <div>已用时：<span id="remote_time">0</span>s</div>
         <div>已得分：<span id="remote_score">0</span>分</div>
         <div id="remote_gameOver"></div>
-        <button id="down">down</button>
-        <button id="left">left</button>
-        <button id="right">right</button>
-        <button id="rotate">rotate</button>
-        <button id="fall">fall</button>
-        <button id="fixed">fixed</button>
-        <button id="peformNext">peformNext</button>
-        <button id="checkClear">checkClear</button>
-        <button id="checkGameOver">checkGameOver</button>
-        <button id="setTime">setTime</button>
-        <button id="addScore">addScore</button>
-        <button id="addTailLines">addTailLines</button>
-        <button id="gameOver">gameOver</button>
-
-
-
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
 <script src="js/local.js"></script>
 <script src="js/game.js"></script>
 <script src="js/square.js"></script>
